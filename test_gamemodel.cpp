@@ -77,7 +77,7 @@ private slots:
                 model.processBoarding();
             }
             
-            // Se algum passageiro embarcou, o score deve ter aumentado
+            // Se algum passageiro embarcou, a pontuaçao deve ter aumentado
             if (model.getScore() > initialScore) {
                 QVERIFY(model.getPassengerQueue().size() < initialQueue);
             }
